@@ -1,21 +1,112 @@
-button {
-  background-color: blue;
-  border-radius: 5px;
-  color: white;
-  border-color: black;
-  border-style: solid;
-  height: 50px;
-  width: 150px;
-}
+  body {
+    background-image: url('images/bg.png');
+    overflow:hidden
+    /*background-color: #1e1729;*/
+  }
+  
+  .uc {
+    font-family: 'Times New Roman';
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
 
-button:hover {
-  background-color: aqua;
-  color: black;
-}
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  .sub-uc {
+    font-family: monospace;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: rgb(113, 113, 113);
 
-button:active {
-  background-color: rgb(167, 255, 255);
-  color: rgb(50, 52, 56);
-  width: 155px;
-  height: 55px;
-}
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .cautiontape {
+    display: block;
+    background-image: url("images/yellowandblack.jpg");
+    height: 4.965243296921549vh;
+    width: 110%;
+    margin-left: -10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    background-repeat: repeat-x;
+    background-size: 25vh 25vh;
+  }
+
+  .maindiv {
+    margin: auto;
+    margin-top: 0;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 100%);
+    backdrop-filter: blur(3px); /* Apply blur for the frosted effect */
+  -webkit-backdrop-filter: blur(3px); /* Safari compatibility */
+    border-radius: 50px;
+    width: 60%;
+    height: 40vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.25), inset 0 0 20px rgba(255,255,255,0.5);
+
+    transition: transform 1s;
+  }
+
+  .maindiv:hover {
+    transform: translate(0, -0.5vh);
+  }
+
+  .headerindiv {
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    font-family: monospace;
+    font-size: xx-large;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .portfoliobutton {
+    display: block;
+    margin: auto;
+    margin-top: 7%;
+    width: 40%;
+    height: 40%;
+
+    font-size: 4vh;
+    font-family: monospace;
+    font-weight: bolder;
+    color: white;
+
+    border: none;
+    border-radius: 3vh;
+
+    background-image: url("images/bg.png");
+    background-blend-mode: color;
+    background-color: rgba(50,50,50,0.8);
+    
+    box-shadow: 0 0 40px rgba(0,0,0,0.5), inset 0 0 100px rgba(151, 82, 255, 0.5), inset 0 0 20px rgba(255,255,255,0.25);
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+
+  .portfoliobutton:hover {
+    transform: scale(1.05)
+  }
+
+  .portfoliobutton:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 20px rgba(0,0,0,0.25), inset 0 0 125px rgba(82, 125, 255, 0.5), inset 0 0 20px rgba(255,255,255,0.4);
+  }
